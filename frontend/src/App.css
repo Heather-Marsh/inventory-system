@@ -1,0 +1,110 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc; 
+  color: #333; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+}
+
+/* Header Styling */
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Button Hover and Active States */
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #1d6fa5;
+}
+
+/* Container for Chart Display */
+.chart-container {
+  width: 90%;
+  max-width: 1100px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  border-radius: 20px;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title for Chart */
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Chart Area */
+.chart-container canvas {
+  max-height: 500px;
+  width: 100%;
+}
+
+/* Toggle Info Section */
+.toggle-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Container for General Layout */
+div {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design: Ensure layout looks good on smaller screens */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .chart-container {
+    padding: 10px;
+  }
+}

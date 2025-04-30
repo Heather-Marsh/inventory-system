@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+scikit-learn
+numpy
+pandas
+pydantic
+prophet
+tensorflow
+react
